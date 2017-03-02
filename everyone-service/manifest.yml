@@ -1,0 +1,7 @@
+applications:
+- name: everyone-service-hase
+  memory: 512m
+  buildpack: java_buildpack
+  path: target/everyone-service-0.0.1-SNAPSHOT.jar
+  services:
+  - rabbitmq-binder
